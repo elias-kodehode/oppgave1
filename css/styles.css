@@ -1,0 +1,59 @@
+body{
+    height: 100px;
+}
+
+header{
+    margin: 5px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer{
+position: absolute;
+bottom: 0px;
+margin: 5px;
+border: 1px solid black;
+text-align: center;
+padding: 10px;
+border-radius: 5px;
+width: 100%;
+}
+
+nav > #nav-bar{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#nav-bar{
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#nav-bar > a {
+    margin: 10px;
+    padding: 5px;
+}
+
+#nav-bar > a:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+#content{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#content > h1{
+    text-align: center;
+}
