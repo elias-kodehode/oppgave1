@@ -1,14 +1,21 @@
+:root{
+    --border-color: gray;
+    --border-width: 1px;
+}
+
 body{
     margin: 0px;
 }
 
+
+
 footer{
-    border-top: 1px solid black;
+    border-top: solid var(--border-width) var(--border-color);
     min-height: fit-content;
     text-align: center;
 }
 #container{
-    background-color: gray;
+    background-color: lightgray;
     min-height: 100vh;
     display: flex;
     flex-direction: row;
@@ -19,7 +26,7 @@ nav{
     display: flex;
     max-width: 20%;
     min-width: 20%;
-    border-right: 1px solid black;
+    border-right: solid var(--border-width) var(--border-color);
     flex-direction: column;
     text-align: center;
 }
@@ -28,14 +35,16 @@ nav > a{
     border: solid 1px black;
     padding: 5px;
     margin: 5px;
+    border-radius: 3px;
 }
 
 nav > a:hover{
-    background-color: aliceblue;
+    background-color: lightblue;
+    border-radius: 0px;
 }
 
 header{
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--border-color);
     min-height: fit-content;
     text-align: center;
 }
@@ -43,5 +52,5 @@ header{
 
 #container > section{
     flex-grow: 1;
-    max-width: 1fr;
+    /* max-width: 1fr; */
 }
