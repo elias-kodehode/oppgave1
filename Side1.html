@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page2</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/app.js" defer></script>
     <script src="./js/basicRouter.js" defer></script>
-    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <main>
-        <div class="layout">
-            <nav id="nav-bar"></nav>
-            <div class="container">
-                <header>This is the home page!</header>
-                <div id="content">
-                    <h1>Content</h1>
-                    <img src="images/images.webp"/>
-                </div>
-                <footer>
-                    <div>hello</div>
-                    <div>from</div>
-                    <div>footer</div>
-                </footer>
-            </div>
+    
+
+    <main id="container">
+        <!--Anchor tags get injected by js-->
+        <nav id="nav-bar">
+        </nav>
+
+        <div style="flex-direction: row; flex-grow: 1;">
+            <header>
+                <!--header auto injected by js-->
+            </header>
+            <section style="padding: 50px;">
+                <h2>Lorem Ipsum cat</h2>
+                <img src="./images/images.webp"/>
+            </section>
+            <footer>
+                <h3>footer</h3>
+            </footer>
         </div>
+
     </main>
 </body>
 </html>
