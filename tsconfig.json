@@ -1,0 +1,13 @@
+{
+    "compileOnSave":true,
+    "compilerOptions": {
+        "module": "es6",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "alwaysStrict": true,
+        "outDir": "./out/"
+        // "outFile": "./out/src.js"
+      }
+
+}

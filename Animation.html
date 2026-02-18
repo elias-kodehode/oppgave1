@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <script src="./out/basicRouter.js" defer></script>    
+    <script src="./out/animation.js" defer></script>
+
+</head>
+<body>
+    <main id="container">
+        <!--Anchor tags get injected by js-->
+        <nav id="nav-bar">
+        </nav>
+
+        <div style="flex-direction: row; flex-grow: 1;">
+            <header>
+                <!--header auto injected by js-->
+            </header>
+
+            <div style="flex-direction: row;justify-items: center;" >
+                <div>
+                    <label for="slider">Animation speed</label>
+                    <input id="slider" type="range" min="0" max="100" value="10" step="0.1">
+                </div>
+
+                <div>
+                    <img id="spinner" src="./images/arrow-repeat.svg" />
+                    <img id="spinner2" src="./images/arrow-repeat.svg" />
+                </div>
+            </div>
+
+
+            <footer>
+                <h3>footer</h3>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>

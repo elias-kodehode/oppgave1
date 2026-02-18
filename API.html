@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //not working? :(
+        async function callApi(){
+
+            alert("not working :(");
+            const response = await fetch("https://cat-fact.herokuapp.com", {
+                method: "GET",
+                mode:"no-cors"
+            });
+
+            console.log(response.json());
+        }
+
+
+    </script>
+</head>
+<body style="display: flex; flex-direction: column;">
+    <a href="Index.html">Home</a>
+    <button onclick="callApi();">Call API</button>
+</body>
+</html>

@@ -1,0 +1,18 @@
+#root{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);   
+    grid-template-rows: repeat(3,150px);
+
+}
+.tile{
+    display: inherit;
+    border: 1px solid black;
+    user-select: auto;
+    text-align: center;
+    font-size: 48px;
+    user-select: none;
+}
+
+.tile:hover{
+    background-color: lightgray;
+}
