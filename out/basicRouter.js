@@ -6,6 +6,7 @@ pages = [
     { path: "index.html", displayText: "Index" },
     { path: "side1.html", displayText: "Page 1" },
     { path: "side2.html", displayText: "Page 2" },
+    { path: "flex.html", displayText: "Flex" },
     { path: "animation.html", displayText: "Animation" },
     { path: "api.html", displayText: "API" },
     { path: "tictactoe.html", displayText: "Tic Tac Toe" }

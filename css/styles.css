@@ -7,13 +7,12 @@ body{
     margin: 0px;
 }
 
-
-
 footer{
     border-top: solid var(--border-width) var(--border-color);
     min-height: fit-content;
     text-align: center;
 }
+
 #container{
     background-color: lightgray;
     min-height: 100vh;
@@ -36,12 +35,28 @@ nav > a{
     padding: 5px;
     margin: 5px;
     border-radius: 3px;
+    text-decoration: none;
+
 }
 
 nav > a:hover{
     background-color: lightblue;
     border-radius: 0px;
+    outline: solid 1px black;
+    outline-offset: 1px;
 }
+ /*used for visualizing the elements and its boundaries*/
+ /* *:hover{
+    outline: dashed 2px orange;
+    outline-offset: 0px;
+ } */
+
+
+/*change link color*/
+ a:-webkit-any-link
+ {
+    color: black;
+ }
 
 header{
     border-bottom: 2px solid var(--border-color);
