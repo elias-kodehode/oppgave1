@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer>
-async function callApi(){
+function getAPI(){
 
-    var response =  await fetch("https://localhost:7021/", {
+    var response = fetch("https://localhost:7021/get", {
         method: "GET",
-        mode:"no-cors"
+        mode:"cors"
+    })
+    .then(x => {
+        alert("Message from API: " + x.json());
     });
-
-    console.log(response);
 }
 
+
+const request = {
+    data: "test"
+};
+
+console.log(JSON.stringify(request))
+
+function postAPI(){
+
+    var response = fetch("https://localhost:7021/post",{
+        method: "POST",
+        mode:"cors",
+        body: JSON.stringify(request),
+        headers: {
+            "Content-Type":"application/json"
+        }
+    })
+    .then(x => {
+        alert("Message from API: " + x.json());
+    });
+}
     </script>
 </head>
 <body style="display: flex; flex-direction: column;">
     <a href="Index.html">Home</a>
-    <button onclick="callApi();">Call API</button>
+    <p>This wont work without the backend :)</p>
+    <button onclick="getAPI();">GET API</button>
+    <button onclick="postAPI();">POST API</button>
+
 </body>
 </html>
